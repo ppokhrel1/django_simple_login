@@ -1,0 +1,14 @@
+<html>
+	<head>
+	<title> Login </title>
+	
+	</head>
+	<body class = "{% if request.user.is_authenticated %}Logged-In{% else %}Logged-out{% endif %}">
+
+	{% if user.is_authenticated %}
+	<a href = "/accounts/logout/" class="pull-right">Logout</a>
+	{% endif %}
+	</body>
+</html>
+
+
